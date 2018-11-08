@@ -33,14 +33,14 @@ $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587; //ini adalah port default mbah google
 $mail->SMTPSecure = 'tls'; //security pakai ssl atau tls, tapi ssl telah deprecated
 $mail->SMTPAuth = true; //menandakan butuh authentifikasi
-$mail->Username = "hanungsmbd@gmail.com";//email anda
-$mail->Password = "kopongSS217"; //password anda, silakan diganti
+$mail->Username = "xxxxxxx@gmail.com";//email anda
+$mail->Password = "XXXXXXX"; //password anda, silakan diganti
 $mail->setFrom('admin@berkasgamatechno.ga', 'Admin');
 $mail->addReplyTo('admin@berkasgamatechno.ga', 'Admin');
 $mail->Subject = 'Notifikasi berkas kadaluarsa';
 
 /*melakukan koneksi ke MySQL*/
-$link = mysqli_connect("localhost", "id7757521_root", "12345678", "id7757521_gamatechno"); 
+$link = mysqli_connect("localhost", "id7757521_root", "XXXXXXXXX", "id7757521_gamatechno"); 
 
 /*perbedaan dari source code kemarin adalah disini dia cari yang penandanya 0 dan dilimit 1 saja */
 $result=mysqli_query($link,"SELECT * FROM user WHERE penanda=0 LIMIT 0,1");
